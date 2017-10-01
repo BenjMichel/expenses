@@ -12,25 +12,25 @@
   width: auto;
 }
 
-.Groceries {
+.Loyer {
   background: rgb(85, 178, 35);
 }
-.Restaurants {
+.Santé {
   background: rgb(242, 60, 0);
 }
-.Car {
+.Maison {
   background: rgb(166, 2, 221);
 }
-.Hobbies {
+.Loisir {
   background: rgb(38, 94, 4);
 }
-.Household {
+.Repas {
   background: rgb(0, 183, 224);
 }
-.Shopping {
+.Charges {
   background: rgb(214, 214, 0);
 }
-.Health {
+.Courses {
   background: rgb(252, 169, 5);
 }
 .Entertainment {

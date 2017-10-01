@@ -19,6 +19,8 @@ export default class ExpenseIcon extends Component {
         return "local_hospital";
       case "Train":
         return "directions_transit";
+      case "Cadeaux":
+        return "card_giftcard";
       default:
         return "attach_money";
     }
