@@ -15,10 +15,8 @@ class App extends Component {
     super();
 
     this.clientId =
-      "826265862385-p41e559ccssujlfsf49ppmo0gktkf6co.apps.googleusercontent.com";
-    this.spreadsheetId =
-      process.env.REACT_APP_SHEET_ID ||
-      "1eYrQf0xhs2mTSWEzQRfSM-MD-tCcx1r0NVEacLg3Jrc";
+      "535249962514-9sgtpqc93dboa360ve622ugop8fd86ai.apps.googleusercontent.com";
+    this.spreadsheetId = "13TCCuoBH8IvMTRAfM8oVZWLkLU8BPk1gXXQvgV-ZUBU";
 
     this.state = {
       signedIn: undefined,
