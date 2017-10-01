@@ -24,7 +24,7 @@ export default class ExpenseDetail extends Component {
           </span>
         </span>
         <span className="mdc-list-item__end-detail">
-          {this.props.expense.amount}€
+          {this.props.expense.amount}
         </span>
       </li>
     );

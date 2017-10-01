@@ -151,24 +151,24 @@ class App extends Component {
     const dateParts = value[0].split("/");
     return {
       id: `Expenses!A${index + 2}`,
-      date: `20${dateParts[2]}-${dateParts[1].length === 1
+      date: `${dateParts[2]}-${dateParts[1].length === 1
         ? "0" + dateParts[1]
         : dateParts[1]}-${dateParts[0].length === 1
         ? "0" + dateParts[0]
         : dateParts[0]}`,
       description: value[1],
       category: value[3],
-      amount: value[4].replace(",", ""),
+      amount: value[4],
       account: value[2]
     };
   }
 
   formatExpense(expense) {
     return [
-      `=DATE(${expense.date.substr(0, 4)}, ${expense.date.substr(
+      `=DATE(${expense.date.substr(0, 4)}; ${expense.date.substr(
         5,
         2
-      )}, ${expense.date.substr(-2)})`,
+      )}; ${expense.date.substr(-2)})`,
       expense.description,
       expense.account,
       expense.category,
