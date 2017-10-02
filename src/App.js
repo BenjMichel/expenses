@@ -66,7 +66,8 @@ class App extends Component {
     const submitAction = (this.state.expense.id
       ? this.update
       : this.append).bind(this);
-    submitAction(this.state.expense).then(
+    const expense = { ...this.state.expense, amount: this.state.expense.amount.toString().replace('.', ',') }
+    submitAction(expense).then(
       response => {
         this.snackbar.show({
           message: `Expense ${this.state.expense.id ? "updated" : "added"}!`
