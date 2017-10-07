@@ -18,6 +18,8 @@ export default class ExpenseDetail extends Component {
           {this.props.expense.category}
           <span className="mdc-list-item__text__secondary">
             {this.formatDate(this.props.expense.date)}
+          </span>
+          <span className="mdc-list-item__text__secondary">
             {this.props.expense.description
               ? ` ${this.props.expense.description}`
               : ""}
